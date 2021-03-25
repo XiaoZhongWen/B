@@ -1,0 +1,32 @@
+{
+  "name": "B",
+  "version": "0.1.0",
+  "summary": "A short description of B.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/肖仲文/B",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "肖仲文": "262804333@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/肖仲文/B.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "B/Classes/**/*",
+  "public_header_files": "B/Classes/**/*.h",
+  "libraries": "sqlite3",
+  "dependencies": {
+    "FMDB": [
+
+    ],
+    "JSONModel": [
+
+    ]
+  }
+}

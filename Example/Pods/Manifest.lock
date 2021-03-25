@@ -1,0 +1,29 @@
+PODS:
+  - B (0.1.0):
+    - FMDB
+    - JSONModel
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - JSONModel (1.8.0)
+
+DEPENDENCIES:
+  - B (from `../`)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - FMDB
+    - JSONModel
+
+EXTERNAL SOURCES:
+  B:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  B: 7ac1cdb68958b9886acfeb4777219ef35f2cd031
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+
+PODFILE CHECKSUM: 78072b987eabfec94b928940f71e9c765c6cee6d
+
+COCOAPODS: 1.9.3
