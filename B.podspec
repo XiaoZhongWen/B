@@ -25,23 +25,26 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '肖仲文' => '262804333@qq.com' }
-  s.source           = { :git => 'https://github.com/肖仲文/B.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:XiaoZhongWen/B.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'B/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'B' => ['B/Assets/*.png']
-  # }
+  if ENV['SOURCECODE']
+    s.source_files = 'B/Classes/**/*'
+    # s.resource_bundles = {
+    #   'B' => ['B/Assets/*.png']
+    # }
 
-  s.public_header_files = 'B/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-  s.libraries = 'sqlite3'
+    s.public_header_files = 'B/Classes/**/*.h'
+    # s.frameworks = 'UIKit', 'MapKit'
+    # s.dependency 'AFNetworking', '~> 2.3'
+    s.libraries = 'sqlite3'
 
-  s.dependency 'FMDB'
-  s.dependency 'JSONModel'
+    s.dependency 'FMDB'
+    s.dependency 'JSONModel'
+  else
+    s.vendored_framework   = 'B-' + s.version.to_s + '/ios/B.embeddedframework/B.framework'
+  end
 
 end
